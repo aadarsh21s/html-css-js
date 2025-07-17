@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1, .h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.about {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(44, 41, 41);
+    border-radius: 5px;
+}
+
+.about:hover {
+    background-color: rgb(60, 57, 57);
+    transition: background-color 0.5s ease;
+    transform: scale(1.02);   
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    height: 60px;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    align-items: center;
+    color: white;
+    height: 50px;
+}

@@ -1,0 +1,15 @@
+.gridbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background-color: lightgreen;
+}
+
+.gridbox1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background-color: lightblue;
+}

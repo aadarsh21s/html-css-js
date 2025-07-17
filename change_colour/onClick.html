@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="click.css">
+</head>
+<body>
+    <div id="box" class="box">
+        <button id="b1" class="b1" onclick="color1()">Content 1</button>
+        <button id="b2" class="b2" onclick="color2()">Content 2</button>
+        <button id="b3" class="b3" onclick="color3()">Content 3</button>
+    </div>
+
+    <div id="demo" style="width: 1500px; height: 1500px;"></div>
+
+    <script>
+        function color1() {
+            document.getElementById("demo").innerHTML="This is content 1"
+            document.getElementById("demo").style.backgroundColor = "yellow";
+        }
+        function color2() {
+            document.getElementById("demo").innerHTML="This is content 2"
+            document.getElementById("demo").style.backgroundColor="green";
+        }
+        function color3() {
+            document.getElementById("demo").innerHTML="This is content 3"
+            document.getElementById("demo").style.backgroundColor="pink";
+        }
+    </script>
+</body>
+</html>

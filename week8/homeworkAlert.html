@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homeworkAlert.css">
+</head>
+<body>
+    <div class="main">
+        <h1>
+            This is a alert using JavaScript
+        </h1>
+        <p id="demo">Hello, I'm using JavaScript alert.</p>
+    </div>
+    <div class="button">
+        <button onclick="next()">Next</button>
+        <button onclick="end()">End</button>
+    </div>
+    <script>
+        function next() {
+            document.getElementById("demo").innerHTML = "Hello, I'm using JavaScript alert in a different way.";
+        }
+        function end() {
+            alert("This is the end of the alert.");
+        }
+    </script>
+</body>
+</html>

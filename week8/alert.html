@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            align-items: center;
+            display: flex;
+            margin: 20px auto;
+
+        }
+        button:hover {
+            background-color: yellow;
+        }
+    </style>
+<body>
+    <h1>This a warning using JS</h1>
+    <button onclick="abc()">Don't Click Me</button>
+    <script>
+        function abc() {
+            alert("Warning: now there is a problem!");
+        }
+    </script>
+</body>
+</html>

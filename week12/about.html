@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About Us – Techspire College</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body, h1, h2, h3, p { margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+    .container { width: 90%; max-width: 1000px; margin: 0 auto; }
+
+    .header { background: #fff; border-bottom: 1px solid #ddd; }
+    .header .container { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
+    .logo { height: 50px; }
+    nav a { margin-left: 20px; color: #333; text-decoration: none; }
+    nav a.active { font-weight: bold; }
+
+    .hero {
+      background: url('images/hero-bg.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; }
+
+
+    section { padding: 40px 0; }
+    .intro p { text-align: center; }
+
+    .highlights h2 { text-align: center; margin-bottom: 20px; }
+    .cards { display: flex; flex-wrap: wrap; gap: 20px; }
+    .card {
+      flex: 1 1 200px;
+      background: #fafafa;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+    .card img { max-width: 60px; margin-bottom: 10px; }
+
+    .mission-vision {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .mv {
+      flex: 1 1 300px;
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .mv img { width: 40px; display: block; margin-bottom: 10px; }
+
+    .partner { background: #f9f9f9; text-align: center; border-radius: 5px; }
+
+    .footer { text-align: center; font-size: 0.9em; color: #666; border-top: 1px solid #ddd; padding: 20px 0; }
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="images/logo.png" alt="Techspire Logo" class="logo">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#" class="active">About Us</a>
+        <a href="#">Courses</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>About Techspire College</h1>
+      <p>Leading Management & IT College in Kathmandu, Nepal</p>
+    </div>
+  </section>
+
+  <section class="intro container">
+    <p>Techspire, located in New Baneshwor, Kathmandu, provides modern facilities, emphasizing a conducive learning environment. In 2017, the college partnered with the Asia Pacific University of Technology and Innovation (APU), offering world-class tech and business education in Nepal. This collaboration ensures international exposure and prepares students for dynamic and competitive industries in IT and business. Techspire College facilitates tech learning through partnership with Code Himalaya, one of Nepal's rapidly expanding IT enterprises.</p>
+  </section>
+
+  <section class="highlights container">
+    <h2>Techspire Highlights</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/icon-academic.png" alt="Academic Program">
+        <h3>Excellent Academic Programs</h3>
+      </div>
+      <div class="card">
+        <img src="images/icon-faculty.png" alt="Faculty">
+        <h3>Experienced & Dedicated Faculty</h3>
+      </div>
+      <div class="card">
+        <img src="images/icon-facilities.png" alt="Facilities">
+        <h3>State‑of‑the‑Art Facilities</h3>
+      </div>
+      <div class="card">
+        <img src="images/icon-campus.png" alt="Campus Life">
+        <h3>Vibrant Campus Life</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission-vision container">
+    <div class="mv">
+      <img src="images/mission.png" alt="Mission icon">
+      <h2>Our Mission</h2>
+      <p>To provide a transformative educational experience that prepares students to excel in their chosen fields and contribute to society.</p>
+    </div>
+    <div class="mv">
+      <img src="images/mission.png" alt="Vision icon">
+      <h2>Our Vision</h2>
+      <p>Committed to creating a global reputation as a leading institution for higher education with innovative programs.</p>
+    </div>
+  </section>
+
+  <section class="partner container">
+    <h2>Tech Learning Management</h2>
+    <p>Everything we do is centered on industry alignment. Techspire College is overseen by Code Himalaya, a leading IT company in Nepal that provides non-credit training tailored to industry demands.</p>
+  </section>
+
+  <footer class="footer container">
+    <p>© 2025 Techspire College. All rights reserved.</p>
+    <p>New Baneshwor‑10, Kathmandu • info@techspire.edu.np • +977‑1‑5916307, 9801317733</p>
+  </footer>
+</body>
+</html>

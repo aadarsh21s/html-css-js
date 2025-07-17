@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+
+.c {
+    width: 30px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    padding: 60px;
+    align-content: center;
+    margin-top: 45px;
+    font-weight: 600;
+
+}
+
+.l {
+    background-color: rgb(243, 243, 122);
+    color: black;
+
+}
+.L {
+    background-color: rgb(161, 244, 161);
+    color: black;
+    width: 400;
+}
+.r {
+    background-color: rgb(189, 230, 244);
+    color: black;
+}
+
+.list ul {
+    background-color: rgb(241, 241, 178);
+    margin-bottom: 20px;
+    padding: 15px;
+    justify-content: start;
+    gap: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    font-weight: 600;
+}
+
+nav{
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;    
+}
+
+nav ul{
+    gap: 20px;
+    margin-right: 10px;
+}
+
+nav .logo{
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.image {
+  background-color: #eee;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text {
+  text-align: start;
+  font-size: 16px;
+}
+
+.text.split {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  font-weight: bold;
+  margin-top: 20px;
+}
+

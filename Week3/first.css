@@ -1,0 +1,40 @@
+/* id selectors */
+#introduction{
+    font-size: 20px;
+    color:#4d7123;
+}
+
+/* class selectors */
+.emphasis{
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}
+
+/* Element selectors */
+h1, h2{
+    font-family: 'verdana', sans-serif;
+    color: aqua;
+}
+
+/* General styles */
+body{
+    font-family: 'Arial', sans-serif;
+    margin:20px;
+}
+
+/* ID selectors */
+#title {
+    font-size: 32px;
+    color: green;
+}
+
+/* class selectors */
+.bordered {
+    width:300px;
+    border: 30px solid rgb(57, 56, 79);
+    float: right;
+    margin-right: 20px;
+}
+
+

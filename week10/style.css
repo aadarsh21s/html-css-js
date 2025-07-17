@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 2fr 3fr 1fr;
+    color: white;
+    height: 800px;
+}
+
+.first_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box1 {
+    background-color: #e91e63;
+    border: 1px solid white;
+    border-bottom: non  
+}
+
+.box2 {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.box2_1 {
+    background-color: #ff9800;
+    border: 1px solid white;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid white;
+    border-bottom: none;
+}
+
+.box2_2 {
+    background-color: #ab47bc;
+    border-right: 1px solid white;
+}
+
+.box2_3 {
+    background-color: #546e7a;
+    border-left: 1px solid white;
+}
+
+.second_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid white;
+    border-left: none;
+}
+
+.box3 {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    border: 1px solid white;
+}
+
+.boxes1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid white;
+}
+
+.boxes1_1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box3_1 {
+    background-color: #6a6a6a;
+    border-top: none;
+    border-right: 1px solid white;
+}
+
+.box3_2 {
+    background-color: #39cf43;
+    border: 1px solid white;
+    border-top: none;
+    border-right: none;
+}
+
+.box3_3 {
+    background-color: #4a148b;
+    border: 1px solid white;
+    border-left: none;
+}
+
+.box3_4 {
+    background-color: #6d4c41;
+}
+
+.box4 {
+    background-color: #2196f3;
+    border: 1px solid white;
+
+}
+
+.third_container {
+    background-color: #e83836;
+    border: 1px solid white;
+    border-top: none;
+}
+
+.rad {
+    border-radius: 2px ;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightgray;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #container {
+        background: white;
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        height: auto;
+        
+    }
+
+    .first_container,
+    .second_container,
+    .boxes,
+    .boxes1,
+    .boxes1_1,
+    .box2,
+    .box3 {
+        display: contents;
+    }
+
+    .rad {
+        width: 95%;
+        height: 100px;
+        border-radius: 4px;
+        padding-left: 15px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}

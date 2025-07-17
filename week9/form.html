@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <hr>
+    <h1>Aadarsh University</h1>
+    <p class="h2"><i>This form page is open for trial purposes...</i></p>
+    <hr>
+    <header class="header">
+        <div>🏫 Aadarsh University</div>
+        <div>Home</div>
+        <div>About</div>
+        <div>Contact</div>
+    </header>
+    <hr>
+    <div class="about">
+        <h2>About Us</h2>
+        <p>Aadarsh University is a premier institution dedicated to providing quality education and fostering innovation. Our mission is to empower students with knowledge and skills that will help them excel in their chosen fields.</p>
+        <p>We offer a wide range of undergraduate and postgraduate programs across various disciplines, ensuring that our students receive a well-rounded education.</p>
+        <p>Join us in our journey towards excellence!</p>
+        <p>For more information, visit our <a href="https://www.aadarshuniversity.edu.np" target="_blank">official website</a>.</p>
+    </div>
+    <div class="about">
+        <h2>📚 Programs Offered</h2>
+        <ul>
+            <li>Bachelor of Science in Computer Science</li>
+            <li>Bachelor of Business Administration</li>
+            <li>Master of Arts in English Literature</li>
+            <li>Master of Science in Environmental Studies</li>
+            <li>PhD in Education</li>
+        </ul>
+        <p>Explore our diverse programs designed to cater to the needs of modern education and industry
+    </div>
+    <div class="about">
+        <h2>🏫 Campus Life</h2>
+        <p>At Aadarsh University, we believe in a holistic approach to education. Our campus is equipped with state-of-the-art facilities, including libraries, laboratories, and recreational areas.</p>
+        <p>We encourage students to participate in extracurricular activities, clubs, and societies to enhance their learning experience and build a vibrant community.</p>
+        <p>Join us to be part of a dynamic and inclusive campus life that promotes personal growth and development.</p>
+    </div>
+    <hr>
+    <h2>Admission Form</h2>
+    <form onsubmit="return showMessage()"></form>
+        <p>First Name: <input type="text" name="firstname" required placeholder="Enter First Name"></p>
+        <p>Middle Name: <input type="text" name="secondname" placeholder="Enter Middle Name"></p>
+        <p>Last Name: <input type="text" name="lastname" required placeholder="Enter Last Name"></p>
+
+        <p>Previous Institution:
+            <select name="previous_institution" required>
+                <option value="">-Select School or College-</option>
+                <option value="School">School</option>
+                <option value="College">College</option>
+            </select>
+        </p>
+
+        <p>Name of Institution: 
+            <input type="text" name="institution_name" placeholder="School or College Name" required>
+        </p>
+
+        <p>Stream:
+            <select name="stream" required>
+                <option value="">--Select a Stream--</option>
+                <option value="Science">Science</option>
+                <option value="Management">Management</option>
+            </select>
+        </p>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Female" required> Female</label>
+        </fieldset>
+
+        <p>Address: <input type="text" name="address" required placeholder="Nepal"></p>
+        <p>Phone No: <input type="number" name="number" placeholder="9844******"></p>
+        <p>Email: <input type="email" name="email" required placeholder="example123@gmail.com"></p>
+        <p>Date of Birth: <input type="date" name="birth_date" required></p>
+
+        <hr>
+        <p><button type="submit">Submit</button></p>
+
+        <p>
+            <a href="https://www.google.com" target="_blank">Google</a> |
+            <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </p>
+    </form>
+
+    <script>
+        function showMessage() {
+            alert("Hello, User! Your form is submitted successfully!");
+            return true; 
+        }
+    </script>
+    <footer class="footer">
+        <p>&copy; 2025 University Website</p>
+    </footer> 
+</body>
+
+</html>

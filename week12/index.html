@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .bg {
+            position:absolute;
+            height: 400px;
+        }
+
+        .nav-container {
+            position: absolute;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            align-items: center;
+            background-color: aliceblue;
+            width: 100%;
+
+        }
+
+        .src {
+            height: 80px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        ul li {
+            cursor: pointer;
+        }
+
+        .apply {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="header1.png" alt="background" class="bg">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="tech logo" class="src">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Courses</li>
+                    <li>Admission</li>
+                    <li>Explore Techspire</li>
+                    <li>Career</li>
+                    <li>Contact Us</li>
+                </ul>
+                <button class="apply">Apply Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

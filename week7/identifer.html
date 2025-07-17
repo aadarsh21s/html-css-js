@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D House</title>
+  <style>
+    body {
+      margin: 0;
+      background: #87ceeb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      perspective: 1000px;
+    }
+
+    .scene {
+      width: 300px;
+      height: 300px;
+      transform-style: preserve-3d;
+      animation: rotate 20s infinite linear;
+    }
+
+    @keyframes rotate {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(360deg); }
+    }
+
+    .house {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: translateZ(50px);
+    }
+
+    .wall {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: #f4a460;
+      border: 2px solid #333;
+    }
+
+    .front  { transform: rotateY(0deg) translateZ(100px); }
+    .back   { transform: rotateY(180deg) translateZ(100px); }
+    .left   { transform: rotateY(-90deg) translateZ(100px); }
+    .right  { transform: rotateY(90deg) translateZ(100px); }
+    .bottom { 
+      transform: rotateX(90deg) translateZ(100px); 
+      background: #ccc;
+    }
+
+    .roof {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 110px solid transparent;
+      border-right: 110px solid transparent;
+      border-bottom: 80px solid #8b0000;
+      top: -80px;
+      left: -10px;
+      transform: rotateX(45deg);
+      z-index: 1;
+    }
+
+    .door {
+      width: 50px;
+      height: 90px;
+      background: #654321;
+      position: absolute;
+      bottom: 0;
+      left: 75px;
+      border: 2px solid #333;
+    }
+
+    .window {
+      width: 40px;
+      height: 40px;
+      background: #add8e6;
+      position: absolute;
+      border: 2px solid #333;
+    }
+
+    .window1 {
+      top: 50px;
+      left: 20px;
+    }
+
+    .window2 {
+      top: 50px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <div class="house">
+      <!-- Walls -->
+      <div class="wall front">
+        <div class="door"></div>
+        <div class="window window1"></div>
+        <div class="window window2"></div>
+      </div>
+      <div class="wall back"></div>
+      <div class="wall left"></div>
+      <div class="wall right"></div>
+      <div class="wall bottom"></div>
+
+      <!-- Roof -->
+      <div class="roof"></div>
+    </div>
+  </div>
+</body>
+</html>

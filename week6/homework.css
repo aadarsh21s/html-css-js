@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+.c {
+    width: 90px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    padding: 60px;
+    text-align: center;
+    align-content: center;
+    margin-top: 45px;
+    font-weight: 600;
+
+}
+
+.l {
+    background-color: rgb(243, 243, 122);
+    color: black;
+
+}
+.L {
+    background-color: rgb(161, 244, 161);
+    color: black;
+}
+.r {
+    background-color: rgb(189, 230, 244);
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    background-color: rgb(241, 241, 178);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 18px;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.k {
+    padding: 15px;
+    text-align: center;
+    align-content: center;
+    width: 300px;
+    height: 80px;
+    border: 2px solid black;
+    gap: 10px;
+}
+
+.b {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.u {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    width: 300px;
+    height: 75px;
+    background-color: rgb(168, 210, 168);
+    gap: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
